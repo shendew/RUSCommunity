@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <com.skydoves.elasticviews.ElasticImageView
+            android:id="@+id/btn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="10dp"
+            android:layout_toStartOf="@id/btn_del"
+            android:src="@drawable/ic_baseline_edit_24" />
+
+        <com.skydoves.elasticviews.ElasticImageView
+            android:id="@+id/btn_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+
+            android:src="@drawable/ic_baseline_delete_black" />
+
+        <com.skydoves.elasticviews.ElasticImageView
+            android:id="@+id/btn_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/btn_edit"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_baseline_play_arrow_24" />
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/item_title"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+             />
+
+        <TextView
+            android:id="@+id/item_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_edit"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/img"
+            android:text=""
+            android:textColor="@color/dark" />
+
+        <TextView
+            android:id="@+id/isrun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Running"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="#FF0000"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/od"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Faculties"
+            android:layout_below="@id/img"
+            android:layout_marginTop="10dp"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

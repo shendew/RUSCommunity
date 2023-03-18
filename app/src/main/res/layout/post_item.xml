@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="275dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/header" />
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:background="#99FFFFFF"
+            android:layout_alignParentBottom="true"
+            android:layout_height="60dp" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My University"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="@color/dark"
+            android:layout_marginBottom="10dp"
+            android:padding="3dp"
+            android:layout_above="@id/auther"
+
+            />
+
+        <TextView
+            android:id="@+id/auther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:padding="5dp"
+            android:textSize="11dp"
+            android:text="by Shehara"
+            />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

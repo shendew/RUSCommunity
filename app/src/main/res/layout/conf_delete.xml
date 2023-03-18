@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="10dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete Allert"
+            android:textSize="20dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Are you sure ?"
+            android:textStyle="bold"
+            android:textColor="@color/dark"
+            android:layout_marginTop="50dp"
+            />
+        <com.kusu.library.LoadingButton
+            android:id="@+id/delete"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Delete"
+            android:textColor="@color/white"
+            app:lb_buttonColor="@color/maroon"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+        <com.kusu.library.LoadingButton
+            android:id="@+id/cancle"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Cancle"
+            android:textColor="@color/black"
+            app:lb_buttonColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

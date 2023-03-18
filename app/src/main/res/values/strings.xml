@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">RUSL Community</string>
+    <string name="temp_image">http://www.rjt.ac.lk/images/header.jpg</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="about">Rajarata University of Sri Lanka ,located in the historic city of Mihintale,which is situated 14 kilometres away from the east of Anuradhapura,was established on 31 of January 1996.\n\nIt envisages to highlight the city, Mihintale, which marks the inception of the Sri Lankan social development, as one of the most prominent centre of the present academic arena in the Sri Lankan history.\n\nThrough this, it is expected to produce virtuous, intellectual and competent citizens for the needs of the 21 st century.</string>
+
+    <string name="agri_about">The Faculty of Agriculture was initiated in 2001 with the aim of developing sustainable agricultural systems particularly focused on the Dry Zone of Sri Lanka by utilizing rural farm settings and natural resources effectively. To achieve this goal, Faculty of Agriculture offers a Bachelor of Science in Agriculture (B.Sc. (Agric.) as a special degree, which is a four-year degree programme.The Bachelor degree programme comprises of semester-based evaluations that consist of eight semesters, during which different courses are offered by the four departments. These four departments are, Agricultural Engineering and Soil Science (ES), Agricultural Systems (AS), Animal and Food Sciences</string>
+
+    <string name="app_about">The Faculty of Applied Sciences is committed to its main objective of producing quality graduates with academic knowledge and vocational skills, who will meet the challenges required by recent global scientific developments in the country. Hence, one of the primary strategies of the faculty is to develop a system to produce skilled graduates with wide social exposure in the field of applied sciences.The FAS consists of five Departments viz: Biological Sciences, Chemical Sciences, Computing, Health Promotion and Physical Sciences. The Department of Biological Sciences offers courses in the fields of Botany, Zoology and Biology while the Department of Physical Sciences offers courses in the fields of Chemistry, Physics, Pure Mathematics, Applied Mathematics and Statistics. The Department of Health Promotion offers courses in Health Promotion and the Department of Computing offers courses in Computer Science and Information Technology. The Department of Chemical Sciences offers courses in the field of Chemistry. Currently the Faculty has over 100 employees which includes Professors, Senior Lecturers, Lecturers, Technicians and Administrative Officers, and 833 students.From its inception, the Faculty follows the course unit system. The programs are completed within 6 semesters in the case of 3-year degree programs and 8 semesters in the case of 4-year degree programs. Almost all courses are designed, taught and overseen by the Faculty of Applied Sciences and all Faculty are required to teach as part of their duties. Since the class sizes are small it allows a closer student-teacher relationship at the Faculty.The Faculty conducts research of high quality and practical value in the fields of Biology, Chemistry, Physics, Information Technology, Health Promotion, Mathematics and Statistics.</string>
+
+    <string name="mng_about">Faculty of Management Studies (FMS) is one of the six faculties which operate as one of the ‘Centre of excellence’ in management studies. It has a population of around 1600 students following undergraduate studies and a young but energetic team of about 50 members of academic staff. The faculty offers educational programmes both at undergraduate and postgraduate levels; they include Bachelor’s degrees, post graduate diplomas, postgraduate degrees offered under different sub-disciplines of management. The Faculty consists of six academic departments, viz, the Department of Accountancy and Finance, Department of Business Management, Departmentof Human Resource Management, Departmentof Information System, Department of Marketing Managemnt and the Department of Tourism and Hospitality Management and each of which offers minimum one degree programmes.</string>
+
+    <string name="med_about">The Faculty of Medicine and Allied Sciences is the newest Faculty of Rajarata University of Sri Lanka.The Rajarata University of Sri Lanka was established on 7th of November 1995 under Section 21 of the Sri Lanka universities Act No. 16 of 1978 by amalgamating the resources of the Affiliated University Colleges in the Central, North Western and North Central Provinces. The main University is located at Mihintale, a world heritage site, 17 km from the city of Anuradhapura, once a well known centre of learning several centuries before the beginning of the Christian era.Currently the University has five faculties – Faculty of Agriculture located at Puliyankulama, Faculty of Applied Sciences, Faculty of Management Studies and the Faculty of Social Sciences and Humanities located in the main campus at Mihintale and the Faculty of Medicine and Allied Sciences at Saliyapura. The decision to establish a new Faculty of Medicine of the Rajarata University of Sri Lanka in Anuradhapura was made by the Ministry of Higher Education in July 2006. The former Youth Ranger Training Centre at Saliyapura was identified as the site of the new faculty. The location is 7 km from the Anuradhapura General Hospital and 17 km from the main campus at Mihintale.The first batch of 171 medical undergraduates from 22 districts of the island was enrolled in 2006. This included 38 students displaced from the Faculty of Medicine of the Eastern University of Sri Lanka. The first batch of MBBS graduates are passed out from the Faculty in 2012.The work on the new Para-clinical building commenced in 2008 and new departments of Biochemistry, Parasitology, Microbiology, Pharmacology, Forensic Medicine, Pathology and Community Medicine moved into the new Para-clinical complex in May 2010. The building of the clinical building to house the professorial units and wards, clinics and teaching areas commenced in 2009 and completed in February 2012, in time for the professorial appointments of the senior most batch of medical students. This multistoried building houses the departments of Medicine, Surgery, Obstetrics and Gynaecology, Paediatrics and Psychiatry.</string>
+
+    <string name="ssh_about">Faculty of Social Sciences and Humanities has been functioning from the inception of the university in 1995. Faculty has 05 departments namely Humanities, Social Sciences, Archaeology and Heritage Management, Environment Management and Languages.</string>
+
+    <string name="techfac">Welcome to the Faculty of Technology at Rajarata University of Sri Lanka!.The Faculty of Technology is the latest addition to the family of Rajarata University. Located at the historic city of Mihintale the Faculty provides a unique learning and working experience for its students and the staff.While producing high quality Technology graduates, who can thrive in the global job market, the faculty has a clear vision of becoming a leader in research and innovation. The faculty’s strong alliance to the industry and foreign universities ensures that the students get relevant and up to date education in their classrooms and laboratories. The faculty has heavily invested on its infrastructure and currently possesses a state of the art laboratory complex and several high end equipment. Therefore the students will get exposed to the latest trends and technologies available in their respective fields. Also the faculty has a young team of highly motivated academics working tirelessly to create a unique and pleasant learning environment to the students.As the Dean of this beautiful faculty I am honored to invite you all to explore our faculty and join with us to change the lives through the Technology to make the world a better place.</string>
+
+
+    <string-array name="years_array">
+        <item>All Years</item>
+        <item>First Year</item>
+        <item>Second Year</item>
+        <item>Third Year</item>
+        <item>Final Year</item>
+        <item>Alumni Association</item>
+    </string-array>
+
+    <string-array name="faculty_array">
+        <item>All Faculties</item>
+        <item>Technology Faculty</item>
+        <item>Applied Science Faculty</item>
+        <item>Agriculture Faculty</item>
+        <item>Management Studies Faculty</item>
+        <item>Medical and Allied Faculty</item>
+        <item>Social Science and Humanities Faculty</item>
+    </string-array>
+
+    <string-array name="event_array">
+        <item>All Events</item>
+        <item>Culture Festival</item>
+        <item>Pilibimbu Event</item>
+
+    </string-array>
+
+
+</resources>

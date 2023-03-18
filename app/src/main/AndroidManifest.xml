@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kingdew.ruslcommunity">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RUSLCommunityHome"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Helpers.EventMemberView"
+            android:exported="false" />
+        <activity
+            android:name=".EventCenterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SlidersCenterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationCenterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LivePannel"
+            android:exported="false" />
+        <activity
+            android:name=".DashBoardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationAddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewsPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewsViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyPostsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FacultiesActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".Services.NotificationSerivice"
+            android:exported="true" />
+
+        <activity
+            android:name=".AddPostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationPageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".UserProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PostViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PostPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.RUSLCommunity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.RUSLCommunity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactActivity">
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/head">
+
+    </View>
+
+    <com.skydoves.elasticviews.ElasticImageView
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Contact"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@id/text">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Postal Address"
+                    android:textSize="18dp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rajarata University of Sri Lanka,\nMihintale - 50300,\nSri Lanka"
+                    android:textSize="18dp"
+                    android:paddingStart="30dp"
+                    android:padding="5dp"
+                    android:textColor="@color/dark"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="General Contact"
+                    android:textSize="18dp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Telephone"
+                    android:textSize="18dp"
+
+                    android:paddingStart="30dp"
+                    android:textColor="@color/dark"/>
+
+                <TextView
+                    android:id="@+id/gtel1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:paddingStart="50dp"
+                    android:text="+94-25-2266645"
+                    android:onClick="onClick"
+                    android:textColor="@color/dark"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/gtel2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:paddingStart="50dp"
+                    android:text="+94-25-2266646"
+                    android:onClick="onClick"
+                    android:textColor="@color/dark"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/gtel3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:paddingStart="50dp"
+                    android:text="+94-25-2266650"
+                    android:onClick="onClick"
+                    android:textColor="@color/dark"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textSize="18dp"
+                    android:paddingStart="30dp"
+                    android:textColor="@color/dark"/>
+
+                <TextView
+                    android:id="@+id/gem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:paddingStart="50dp"
+                    android:text="info@rjt.ac.lk"
+                    android:onClick="onClick"
+                    android:textColor="@color/dark"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VC's Office"
+                    android:textSize="18dp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Telephone"
+                    android:textSize="18dp"
+                    android:paddingStart="30dp"
+                    android:textColor="@color/dark"/>
+
+                <TextView
+                    android:id="@+id/vcstele1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:paddingStart="50dp"
+                    android:text="+94-25-2266644"
+                    android:textColor="@color/dark"
+                    android:onClick="onClick"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fax"
+                    android:textSize="18dp"
+                    android:paddingStart="30dp"
+                    android:textColor="@color/dark"/>
+
+                <TextView
+                    android:id="@+id/vcstele2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:paddingStart="50dp"
+                    android:text="+94-25-2266512"
+                    android:onClick="onClick"
+                    android:textColor="@color/dark"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textSize="18dp"
+                    android:paddingStart="30dp"
+                    android:textColor="@color/dark"/>
+
+                <TextView
+                    android:id="@+id/vcsema1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:paddingStart="50dp"
+                    android:text="vcrusl@yahoo.com"
+                    android:onClick="onClick"
+                    android:textColor="@color/dark"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/vcsema2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:paddingStart="50dp"
+                    android:text="vc@rjt.ac.lk"
+                    android:onClick="onClick"
+                    android:textColor="@color/dark"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registrar's Office"
+                    android:textSize="18dp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Telephone"
+                    android:textSize="18dp"
+                    android:paddingStart="30dp"
+                    android:textColor="@color/dark"/>
+
+                <TextView
+                    android:id="@+id/regtel1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:paddingStart="50dp"
+                    android:onClick="onClick"
+                    android:text="+94-25-2266511"
+                    android:textColor="@color/dark"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fax"
+                    android:textSize="18dp"
+                    android:paddingStart="30dp"
+                    android:textColor="@color/dark"/>
+
+                <TextView
+                    android:id="@+id/regtel2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:paddingStart="50dp"
+                    android:onClick="onClick"
+                    android:text="+94-25-2266511"
+                    android:textColor="@color/dark"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textSize="18dp"
+                    android:paddingStart="30dp"
+                    android:textColor="@color/dark"/>
+
+                <TextView
+                    android:id="@+id/regema"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:paddingStart="50dp"
+                    android:text="regofffice@rjt.ac.lk"
+                    android:onClick="onClick"
+                    android:textColor="@color/dark"
+                    android:textSize="18dp" />
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </ScrollView>
+
+</RelativeLayout>

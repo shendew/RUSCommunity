@@ -1,0 +1,104 @@
+package com.kingdew.ruslcommunity;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+
+import com.facebook.shimmer.ShimmerFrameLayout;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.kingdew.ruslcommunity.Adapters.PostAdapter;
+import com.kingdew.ruslcommunity.Models.PostData;
+import com.skydoves.elasticviews.ElasticFloatingActionButton;
+import com.skydoves.elasticviews.ElasticImageView;
+
+import java.util.ArrayList;
+
+public class MyPostsActivity extends AppCompatActivity {
+    RecyclerView recyclerView;
+    ElasticImageView back;
+    ElasticFloatingActionButton addPost;
+    ArrayList<PostData> array=new ArrayList<>();
+    ShimmerFrameLayout layout;
+    String uid;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_my_posts);
+        uid= FirebaseAuth.getInstance().getCurrentUser().getUid();
+        initView();
+        setupRecyclerView();
+
+        addPost.setOnClickListener(view -> {
+            startActivity(new Intent(this,AddPostActivity.class));
+        });
+        back.setOnClickListener(view -> {
+            finish();
+        });
+    }
+
+    private void initView() {
+        recyclerView=findViewById(R.id.post_page_rView);
+        back=findViewById(R.id.back);
+        addPost=findViewById(R.id.floatadd);
+
+        layout=findViewById(R.id.shmm);
+    }
+
+    private void setupRecyclerView() {
+
+        recyclerView.setHasFixedSize(true);
+        GridLayoutManager gridLayoutManager=new GridLayoutManager(this,2,GridLayoutManager.VERTICAL,false);
+        recyclerView.setLayoutManager(gridLayoutManager);
+
+        FirebaseDatabase.getInstance().getReference("Posts").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if (!array.isEmpty()){
+                    array.clear();
+                }
+                for (DataSnapshot item: snapshot.getChildren()){
+
+                    if (item.child("user").getValue(String.class).equals(uid)){
+                        array.add(new PostData(
+                                item.child("auther").getValue(String.class),
+                                item.child("id").getKey(),
+                                item.child("title").getValue(String.class),
+                                item.child("url").getValue(String.class),
+                                item.child("user").getValue(String.class),
+                                item.child("desc").getValue(String.class)
+                        ));
+                    }
+
+                }
+
+                PostAdapter adapter=new PostAdapter(MyPostsActivity.this,array,"postpage");
+                recyclerView.setAdapter(adapter);
+                layout.stopShimmerAnimation();
+                layout.setVisibility(View.INVISIBLE);
+                recyclerView.setVisibility(View.VISIBLE);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+
+
+
+
+
+
+    }
+}

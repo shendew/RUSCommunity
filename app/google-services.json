@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "685259771551",
+    "firebase_url": "https://rusl-2020-batch-database-default-rtdb.firebaseio.com",
+    "project_id": "rusl-2020-batch-database",
+    "storage_bucket": "rusl-2020-batch-database.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685259771551:android:3c2ebd69d8a6da12875caa",
+        "android_client_info": {
+          "package_name": "com.kingdew.ruslcommunity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "685259771551-m09ml5hfkm1gjhpob847r5hlg4febl99.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kingdew.ruslcommunity",
+            "certificate_hash": "82bb572c3500cbb20f4404ccb403f1b8960bd9c2"
+          }
+        },
+        {
+          "client_id": "685259771551-l68etq5mjsahc5nigbrrfmjcsqfmllok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBokHAUsHzgTz5_3Np2Dl4deihbcfBILJM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "685259771551-l68etq5mjsahc5nigbrrfmjcsqfmllok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostViewActivity">
+
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/head"
+        tools:layout_editor_absoluteX="38dp" />
+
+    <TextView
+        android:id="@+id/topbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_toRightOf="@id/back"
+        android:padding="5dp"
+        android:text="Welcome To Rajarata University"
+        android:textColor="@color/white"
+
+        android:textSize="20dp" />
+
+    <com.skydoves.elasticviews.ElasticImageView
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+    <com.skydoves.elasticviews.ElasticImageView
+        android:id="@+id/delete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_baseline_delete_24" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/back"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/main_image"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/header" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-15dp"
+                android:orientation="vertical"
+                android:background="@drawable/post_view_background"
+                android:backgroundTint="#F6F6F6">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome To Rajarata University"
+                    android:textColor="@color/dark"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:padding="5dp"/>
+                <TextView
+                    android:id="@+id/auther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="by shehara"
+                    android:layout_margin="10dp"
+                    />
+                <TextView
+                    android:id="@+id/body"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:text="As the Vice Chancellor of the Rajarata University of Sri Lanka, my vision is to make it a leading, extraordinary University in Sri Lanka and Asia in its all fields of study with the highest caliber of education, research and personality development by capitalizing on skills, competencies and talents creating a multidimensional and globally accepted person with the effective knowledge generation and dissemination. This vision is in par with the present university vision and the present government vision for higher education.As the Vice Chancellor of the Rajarata University of Sri Lanka, my vision is to make it a leading, extraordinary University in Sri Lanka and Asia in its all fields of study with the highest caliber of education, research and personality development by capitalizing on skills, competencies and talents creating a multidimensional and globally accepted person with the effective knowledge generation and dissemination. This vision is in par with the present university vision and the present government vision for higher education.As the Vice Chancellor of the Rajarata University of Sri Lanka, my vision is to make it a leading, extraordinary University in Sri Lanka and Asia in its all fields of study with the highest caliber of education, research and personality development by capitalizing on skills, competencies and talents creating a multidimensional and globally accepted person with the effective knowledge generation and dissemination. This vision is in par with the present university vision and the present government vision for higher education.As the Vice Chancellor of the Rajarata University of Sri Lanka, my vision is to make it a leading, extraordinary University in Sri Lanka and Asia in its all fields of study with the highest caliber of education, research and personality development by capitalizing on skills, competencies and talents creating a multidimensional and globally accepted person with the effective knowledge generation and dissemination. This vision is in par with the present university vision and the present government vision for higher education.As the Vice Chancellor of the Rajarata University of Sri Lanka, my vision is to make it a leading, extraordinary University in Sri Lanka and Asia in its all fields of study with the highest caliber of education, research and personality development by capitalizing on skills, competencies and talents creating a multidimensional and globally accepted person with the effective knowledge generation and dissemination. This vision is in par with the present university vision and the present government vision for higher education."
+                    />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
